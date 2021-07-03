@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Spartan", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  z-index: 1;
+}
+
+/* HEADER SECTION */
+
+.heading {
+  color: hsl(300, 43%, 22%);
+  margin-top: 30%;
+  text-align: center;
+}
+
+.description {
+  color: hsl(303, 10%, 53%);
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+
+.top-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+}
+.top-img-desktop {
+  display: none;
+}
+
+/* RATINGS SECTION */
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15%;
+}
+
+.rating {
+  background-color: hsl(300, 24%, 96%);
+  text-align: center;
+  padding: 5% 0;
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+
+.stars {
+  letter-spacing: 0.4rem;
+}
+
+.rating p {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 5%;
+}
+
+/* USER REVIEWS SECTION */
+
+.review {
+  background-color: hsl(300, 43%, 22%);
+  margin-bottom: 10%;
+  border-radius: 10px;
+  color: white;
+  padding: 10%;
+  z-index: 1;
+}
+
+.review p {
+  font-size: 13px;
+  line-height: 1.5rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.user img {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.profile-text span {
+  font-size: 13px;
+}
+
+.name {
+  margin-bottom: 5px;
+}
+
+.verified {
+  color: hsl(333, 80%, 67%);
+}
+
+/* ATTRIBUTION SECTION */
+
+.attribution {
+  position: relative;
+  font-size: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.credits {
+  position: relative;
+  z-index: 1;
+}
+
+.bottom-img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.bottom-img-desktop {
+  display: none;
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (min-width: 1024px) {
+  .top-img {
+    display: none;
+  }
+  .bottom-img {
+    display: none;
+  }
+  .top-img-desktop {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+  }
+  .bottom-img-desktop {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+  .container {
+    width: 80%;
+  }
+  .main-section {
+    display: flex;
+  }
+  .header {
+    max-width: 50%;
+    width: 35%;
+    margin-right: 5%;
+  }
+  .heading {
+    text-align: left;
+    font-size: 45px;
+  }
+  .description {
+    text-align: left;
+    font-size: 18px;
+  }
+  .ratings {
+    max-width: 50%;
+    width: 50%;
+    margin: 10% 0 5% 5%;
+  }
+  .rating {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 75%;
+  }
+  .rating p {
+    margin: 0 0 0 7%;
+    font-size: 16px;
+  }
+  .stars {
+    margin-left: 3%;
+  }
+  #second-rating {
+    margin-left: 10%;
+  }
+  #third-rating {
+    margin-left: 20%;
+  }
+  .user-reviews {
+    display: flex;
+    align-items: center;
+  }
+  .review {
+    padding: 3%;
+    margin-right: 3%;
+  }
+  #second-review {
+    margin-top: 5%;
+  }
+  #third-review {
+    margin-top: 10%;
+  }
+  .profile-text span {
+    font-size: 16px;
+  }
+}
